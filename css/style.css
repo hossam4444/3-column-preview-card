@@ -1,0 +1,106 @@
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing:border-box;
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--Very-light-gray);
+}
+:root {
+  --Bright-orange:hsl(31, 77%, 52%);
+  --Dark-cyan: hsl(184, 100%, 22%);
+  --Very-dark-cyan: hsl(179, 100%, 13%);
+  --paragraphs-color: hsla(0, 0%, 100%, 0.75);
+  --Very-light-gray:hsl(0, 0%, 95%); /* background, headings, buttons  */
+   --fs: 15px; /* Body Copy Font Size */
+}
+.container {
+  min-height: 95vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container .cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  border-radius: 10px;
+  margin: 50px 20px 5px;
+  color: white;
+  overflow: hidden;
+}
+.container .cards .card {
+  padding: 50px;
+}
+.container .cards .sedans {
+  background-color:var(--Bright-orange);
+}
+.container .cards .sedans a {
+  color:var(--Bright-orange);
+}
+.container .cards .sedans a:hover {
+  background-color:var(--Bright-orange);
+}
+.container .cards .suvs {
+  background-color:var(--Dark-cyan);
+}
+.container .cards .suvs a {
+  color:var(--Dark-cyan);
+}
+.container .cards .suvs a:hover {
+  background-color:var(--Dark-cyan);
+}
+.container .cards .luxury {
+  background-color:var(--Very-dark-cyan);
+}
+.container .cards .luxury a {
+  color:var(--Very-dark-cyan);
+}
+.container .cards .luxury a:hover {
+  background-color:var(--Very-dark-cyan);
+}
+.container .cards .card h2 {
+  font-size: 40px;
+  font-family: 'Big Shoulders Display', sans-serif;
+  font-weight: 700;
+  margin: 40px 0;
+  text-transform: uppercase;
+}
+.container .cards .card p {
+  font-size: var(--fs);
+  line-height: 1.7;
+  margin-bottom: 60px;
+  font-family: 'Lexend Deca', sans-serif;
+  font-weight: 300;
+  color: var(--paragraphs-color,hsla(0, 0%, 100%, 0.75));
+}
+.container .cards .card a {
+  background-color: var(--Very-light-gray);
+  border: 2px solid var(--Very-light-gray);
+  padding: 16px 35px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-size: 18px;
+  font-family: 'Lexend Deca', sans-serif;
+  font-weight: 500;
+  transition: 0.3s;
+}
+.container .cards .card a:hover {
+  color: white;
+}
+.attribution {
+  font-size: 13px;
+  text-align: center;
+  padding-bottom: 10px;
+}
+@media (max-width:767px) {
+  .attribution {
+    padding: 20px;
+  }
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+  text-decoration: none;
+}
